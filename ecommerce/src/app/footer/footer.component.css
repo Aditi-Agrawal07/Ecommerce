@@ -1,0 +1,66 @@
+footer{
+    background-color: #F0F0F0;
+}
+.footer{
+    /* position: relative; */
+  
+    padding: 50px 10px 0px 10px;
+}
+
+h6{
+    color: #000;
+     opacity: 60%;
+     line-height: 2rem;
+}
+.desc{
+    color: #000;
+    opacity: 60%;
+}
+.payments_icon img{
+    height: 80px;
+    width: 100px;
+}
+.top_footer{
+    margin: auto;
+    background-color: #000;
+    top: -10px;
+    color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    padding: 25px 10px;
+}
+.newsletterInput{
+    border: none;
+    outline: none;    
+    margin-bottom: 10px;
+}
+.input{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0px 8px;
+height: 50%;
+margin-bottom: 10px;
+}
+.input img{
+    height: 30px;
+    width: 30px;
+    color: #000;
+    opacity: 40%;
+}
+.btn{
+    background-color: #fff;
+    padding: 8px 20px;
+    height: 50%;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight:500;
+}
+
+ /* Mobile view */
+ @media (max-width: 426px){
+    h2.footerHeading{
+        font-size: 15px !important;
+    }
+    
+ }
