@@ -1,0 +1,114 @@
+
+.container-fuild{
+    background-color: #F2F0F1;
+}
+
+button{
+    width: 10rem;
+    border-radius: 30px;
+    color: white;
+}
+button:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+.text{
+    font-family: "Bebas Neue", sans-serif;
+    width: 50vw;
+    font-size: 350%;
+    font-weight: bolder;
+
+}
+
+/* mobail media query */
+@media (max-width: 768px) 
+  { 
+    .text {
+      font-size: 10vh; 
+    }
+    .poster-text{
+        font-size: smaller;
+    }
+ .custom-rang p{
+    font-size: smaller;
+ }
+ .companies img{
+  padding-left: 30%;
+ margin-bottom: 10%;
+  width: 100vw;
+ }
+
+  }
+
+  /* tablet media query */
+  .companies {
+    display:flex;
+    flex-wrap: wrap;
+}
+.companies .col-12 {
+    margin-bottom: 15px;
+}
+@media  (max-width: 992px) {
+    .companies img {
+        width: 50vw;
+        flex: 0 0 50%;
+    }
+    .companies img:nth-child(5) {
+        width: 50vwpx;
+        flex: 0 0 100%;
+    }
+   
+    
+  }
+.poster-text{
+    font-family: "PT Sans", sans-serif;
+    /* font-weight: 300; */
+    font-style: normal; 
+}
+
+/* .col-custom {
+    margin-bottom: 1rem;
+  } */
+ /* .poster-img{
+    position: relative;
+   
+ } */
+ /* .companies{
+    position: absolute;
+    top:96%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 5rem;
+
+ } */
+
+
+ .main-poster{
+    /* margin-left: 8%; */
+    margin-top:2%;
+    position: relative;
+  
+ }
+.vector-img{
+position: absolute;
+top: 30%;
+right:15%;
+ }
+ .image-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    
+  }
+  .image-container img {
+    margin: 0;
+    max-width: 100vw; 
+      /* height: auto; */
+  }
+  .main-poster, .image-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
