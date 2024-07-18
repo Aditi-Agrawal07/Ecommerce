@@ -10,9 +10,7 @@ import { PosterComponent } from './poster/poster.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FooterComponent, CustomerComponent]
-
-
+    imports: [RouterOutlet, FooterComponent, CustomerComponent, HeaderComponent, PosterComponent]
 })
 export class AppComponent {
   title = 'ecommerce';
