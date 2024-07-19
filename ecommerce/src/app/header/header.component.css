@@ -1,9 +1,8 @@
 .container-fuild{
-    /* width: 100vw; */
-    /* overflow-x: hidden; */
+    
 }
 .main-navbar{
-    /* margin-left: 4%; */
+   
     padding-top: 0.8%;
     padding-bottom:0.8%;
     color: black;
@@ -19,24 +18,16 @@ padding-bottom: 1.5%;
     font-weight: bolder;
   
 }
-/* @media (max-width: 768px) { 
-    .hidden-cross {
-        display: none;
-    }
-} */
+
 
 @media(min-width:2600px){
     .custom-font-size{
         font-size: 90%;
     } 
 }
-/* @media screen and (max-width: 1191px) {
-    .navbar-items {
-      font-size: 30%;
-    }
-  } */
+
   .searchbar{
-    /* width: 20rem; */
+    
     border: none;
     border-radius: 50px;
     background-color: rgb(236, 235, 235);
@@ -48,7 +39,7 @@ padding-bottom: 1.5%;
 }
 .search-container input {
     padding-left: 40px;
-    height: 100%; /* Adjust based on the button width */
+    height: 100%; 
 }
 .search-container button {
     position: absolute;

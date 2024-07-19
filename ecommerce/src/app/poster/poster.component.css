@@ -64,30 +64,13 @@ button:hover{
   }
 .poster-text{
     font-family: "PT Sans", sans-serif;
-    /* font-weight: 300; */
+  
     font-style: normal; 
 }
 
-/* .col-custom {
-    margin-bottom: 1rem;
-  } */
- /* .poster-img{
-    position: relative;
-   
- } */
- /* .companies{
-    position: absolute;
-    top:96%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    height: 5rem;
-
- } */
-
 
  .main-poster{
-    /* margin-left: 8%; */
+    
     margin-top:2%;
     position: relative;
   
@@ -106,7 +89,7 @@ right:15%;
   .image-container img {
     margin: 0;
     max-width: 100vw; 
-      /* height: auto; */
+    
   }
   .main-poster, .image-container {
     padding-left: 5%;
