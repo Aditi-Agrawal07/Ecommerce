@@ -1,0 +1,9 @@
+.discount{
+    color: red;
+    background-color: rgb(242, 181, 181);
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
