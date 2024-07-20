@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .card{
+    border: none;
+    padding: 5%;
+  }
+  
+  h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+  }
+  .wishlist-icon {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.wishlist-icon.show {
+    opacity: 1;
+}
+
+.wishlist-icon.active {
+    color: red;
+}
+@media(max-width:768px)
+{
+  .wishlist-icon {
+    position: absolute;
+    top: 15px;
+    right: 29px;
+    font-size: 20px;
+  }
+    
+}
+
+@media(max-width:425px){
+  .wishlist-icon {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 25px;
+    
+}
+
+}
+.shopping-cart{
+  border: 2px solid black;
+  padding: 3%;
+  padding-bottom: 4%;
+  border-radius: 50%;
+}
