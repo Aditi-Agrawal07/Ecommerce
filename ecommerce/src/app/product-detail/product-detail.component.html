@@ -1,28 +1,70 @@
-<div class="row">
-    <div class="col-6"></div>
+<div class="row m-4">
+    <div class="col-6">
+        <div class="row">
+            <div class="col-lg-3 d-flex flex-column product-images">
+                <img src="../../assets/Images/product1/image1.png" alt="" class="p-3" (click)="selectImage($event)">
+                <img src="../../assets/Images/product1/image2.png" alt="" class="p-3" (click)="selectImage($event)">
+                <img src="../../assets/Images/product1/image3.png" alt="" class="p-3" (click)="selectImage($event)">
+
+            </div>
+            <div class="col-lg-7 product-images">
+                <img [src]="selectedImage" alt="" class="py-3">
+            </div>
+        </div>
+    </div>
     <div class="col-6">
         <div class="heading">ONE LINE GRAPHIC T-SHIRT</div>
         <div class="rating d-flex pb-3">
-          <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
-          <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
-          <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
-          <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
-          <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
+            <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
+            <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
+            <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
+            <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
+            <img src="../../assets/star.png" alt="" srcset="" style="height: 20px;">
 
         </div>
         <div class="prices d-flex">
-             <h4 class="me-3">$260</h4>
-             <h4 class="me-3">$300</h4>
-             <span class="discount">-40%</span>
+            <h4 class="me-3 discount-price">$260</h4>
+            <h4 class="me-3 original-price">$300</h4>
+            <span class="discount">-40%</span>
         </div>
-        <p>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+        <p class="description">This graphic t-shirt which is perfect for any occasion.Crafted from a soft and breathable
+            fabric, it offers superior comfort and style.</p>
         <div class="color">
-            <h3>Select Color</h3>
-            <div class="d-flex">
-                <span style="height: 10px; width: 10px; background-color: red; border-radius: 50%;"></span>
-                <span style="height: 10px; width: 10px; background-color: red; border-radius: 50%;"></span>
-                <span style="height: 10px; width: 10px; background-color: red; border-radius: 50%;"></span>
+            <h5 class="section-heading">Select Color</h5>
+            <div class="col-3">
+                <div class="d-flex justify-content-between">
+                    @for (color of colors; track $index) {
+                    <span [ngStyle]="{'background-color': color}" (click)="selectColor(color)" class="color-box">
+                        @if(selectedColor == color){
+                        <img src="../../assets/icons/tickMark.png" alt="" height="20px" width="20px"
+                            style="margin: auto;" class="tick-mark">
+                        }
+                    </span>
+                    }
+                </div>
             </div>
+        </div>
+        <hr>
+        <div class="size">
+            <h5 class="section-heading">Choose Size</h5>
+            <div class="col-8">
+                <div class="d-flex justify-content-between">
+                    @for (size of sizes; track $index) {
+                   <span (click)="selectSize(size)"
+                          [ngClass]="selectedSize == size ? 'selectSize' : '' "
+                   >{{size}}</span>
+                    }
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex">
+            <div class="counter d-flex me-3">
+                <span class="decrement py-2 px-3" (click)="decrement()">-</span>
+                <span class="count py-2 px-3">{{counter}}</span>
+                <span class="increment py-2 px-3" (click)="increment()">+</span>
+            </div>
+            <div class="cartbtn">Add to cart</div>
         </div>
     </div>
 </div>
