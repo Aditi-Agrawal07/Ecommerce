@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .filter-container{
     border: 1px solid black;
 }
@@ -22,3 +23,94 @@
     width: 300px;
   }
   
+=======
+
+
+.sorting-text{
+    text-align: end;
+}
+@media(max-width:320px )   {
+    .cloth-type{
+        font-size: 0.5px;
+       padding-left: 8%;
+    }
+    .sorting-text{
+font-size: smaller;
+    }
+}
+ @media (max-width:375px) {
+    .cloth-type{
+        font-size: 0.5px;
+       padding-left: 8%;
+    }
+    .sorting-text{
+font-size: smaller;
+text-align: left;
+padding-left: 8%;
+    }
+ }
+ @media (max-width:425px) {
+    .cloth-type{
+        font-size: 0.5px;
+       padding-left: 8%;
+    }
+    .sorting-text{
+font-size: smaller;
+text-align: left;
+padding-left: 8%;
+    }
+ }
+
+ @media (max-width:768px){
+    .sorting-text{
+        padding-top: 1%;
+    }
+ }
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.pagination-div{
+    border: 3px solid black;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination-container .center-pagination {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+>>>>>>> 0a473eed04370496cc54a9c4dfe96e4bbba2a774
