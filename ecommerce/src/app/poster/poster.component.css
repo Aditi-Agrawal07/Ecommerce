@@ -22,9 +22,13 @@ button:hover{
 
 }
 
-/* mobail media query */
+/* mobile media query */
 @media (max-width: 768px) 
   { 
+    .brand-image{
+      margin-bottom: 10%;
+      width: 25vw !important;
+    }
     .text {
       font-size: 10vh; 
     }
@@ -34,11 +38,7 @@ button:hover{
  .custom-rang p{
     font-size: smaller;
  }
- .companies img{
-  padding-left: 30%;
- margin-bottom: 10%;
-  width: 100vw;
- }
+ 
 
   }
 
@@ -50,9 +50,9 @@ button:hover{
 .companies .col-12 {
     margin-bottom: 15px;
 }
-@media  (max-width: 992px) {
+@media  (max-width: 992px) and (min-width: 767px){
     .companies img {
-        width: 50vw;
+        width: 30vw;
         flex: 0 0 50%;
     }
     .companies img:nth-child(5) {

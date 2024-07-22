@@ -8,6 +8,7 @@ import { BrowseStyleComponent } from "./browse-style/browse-style.component";
 import { CardsComponent } from './cards/cards.component';
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { AllproductComponent } from './allproduct/allproduct.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @Component({
     selector: 'app-root',
@@ -15,7 +16,7 @@ import { AllproductComponent } from './allproduct/allproduct.component';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [RouterOutlet, FooterComponent, CustomerComponent, HeaderComponent, PosterComponent, 
-        BrowseStyleComponent,CardsComponent,ProductDetailComponent,AllproductComponent]
+        BrowseStyleComponent,CardsComponent,ProductDetailComponent,AllproductComponent , HomepageComponent]
 })
 export class AppComponent {
   title = 'ecommerce';
