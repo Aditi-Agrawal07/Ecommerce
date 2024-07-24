@@ -1,11 +1,14 @@
-const http = require("http")
-const app = require("./app")
+import http from 'http';
+import { app } from './app.js';
+import { MongoConnection } from './utility/database.utility.js';
 
 // PORT
-const port = 8000
+const port = 8000;
 
-const httpServer = http.createServer(app)
+const httpServer = http.createServer(app);
 
-httpServer.listen(port , ()=>{
-    console.log("Server Started")
-})
+await MongoConnection()
+
+httpServer.listen(port, () => {
+    console.log("Server Started on port", port);
+});
