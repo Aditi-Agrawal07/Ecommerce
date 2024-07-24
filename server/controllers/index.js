@@ -1,0 +1,1 @@
+import productController from './product.controller'
