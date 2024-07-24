@@ -4,11 +4,6 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 // import { OwlOptions } from 'ngx-owl-carousel-o';
 // import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SwiperOptions } from 'swiper/types';
-
-
-
-
-
 @Component({
   selector: 'app-customer',
   standalone: true,
