@@ -1,7 +1,8 @@
-const express = require("express")
-const { productRoute } = require("./routers/products.routes")
+import express from 'express';
+import { productRoute } from './routers/products.routes.js';
 
-const app = express()
+const app = express();
 
-app.use("/product", productRoute)
-module.exports ={app}
+app.use("/product", productRoute);
+
+export { app };
