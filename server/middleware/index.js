@@ -1,0 +1,1 @@
+export {multer} from './../middleware/multer.middleware.js'
