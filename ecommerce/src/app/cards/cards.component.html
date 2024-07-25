@@ -48,7 +48,7 @@
                 }
 
                 <div class="d-flex  justify-content-center  mt-3">
-                    <a><button
+                    <a  routerLink="/productcard"><button
                             class="viewAllButton">View All</button></a></div>
                 <hr class="mt-4">
             </div>
@@ -59,7 +59,7 @@
                 </div>
                 @for (card of TopSelling; track $index) {
                 <div class=" col-lg-3 col-md-3 col-x-6 ">
-                    <div class="card" (mouseenter)="hoverIndex = $index" (mouseleave)="hoverIndex = null">
+                    <div class="card"   routerLink="/productDetails"  (mouseenter)="hoverIndex = $index" (mouseleave)="hoverIndex = null">
                         <img class="card-img-top" [src]="card.img" alt="Card image cap">
                         <div class="card-body">
                             <div>{{card.title}}</div>

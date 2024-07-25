@@ -1,18 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { OwlOptions } from 'ngx-owl-carousel-o';
+// import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SwiperOptions } from 'swiper/types';
-
-
-
-
-
 @Component({
   selector: 'app-customer',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [],
   templateUrl: './customer.component.html',
   styleUrl: './customer.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
