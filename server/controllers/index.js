@@ -1,1 +1,1 @@
-import productController from './product.controller'
+export {productController} from './product.controller.js'

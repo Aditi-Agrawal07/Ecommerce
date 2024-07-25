@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose'
+import mongoose, { Schema } from 'mongoose'
 const productSchema = new Schema({
     product_image: { type: String },
     product_name: { type: String },
@@ -6,7 +6,7 @@ const productSchema = new Schema({
     category: { type: String },
     size: {
         type: String,
-        enum: ["XS, S,M,L,XL,XXL"]
+        enum: ['XS', 'S','M','L','XL','XXL']
     },
     color: { type: [String] },
     price: { type: Number },
@@ -14,3 +14,7 @@ const productSchema = new Schema({
     discount: { type: Number }
 
 })
+
+const Product = new mongoose.model("Product", productSchema)
+
+export {Product}
