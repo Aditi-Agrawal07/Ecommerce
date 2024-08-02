@@ -6,7 +6,7 @@ const productSchema = new Schema({
     category: { type: String },
     size: {
         type: String,
-        enum: ["XS, S,M,L,XL,XXL"]
+        enum: ['XS', 'S','M','L','XL','XXL']
     },
     color: { type: [String] },
     price: { type: Number },
@@ -17,5 +17,9 @@ const productSchema = new Schema({
 
 const Product = new mongoose.model("Product", productSchema)
 
+<<<<<<< HEAD
 
 export {Product}
+=======
+export {Product}
+>>>>>>> 91fc26841342e160825dbaa0cef784a934c12a07
