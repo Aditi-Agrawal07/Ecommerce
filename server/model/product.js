@@ -17,5 +17,5 @@ const productSchema = new Schema({
 
 const Product = new mongoose.model("Product", productSchema)
 
-export {Product}
 
+export {Product}
