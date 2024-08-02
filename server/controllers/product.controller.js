@@ -20,7 +20,7 @@ export const productController = {
                 return response.status(404).json({message:"Product Not Found "})
             }
             response.json(product)
-            const requestBody = req.body
+            const requestBody = request.body
 
             console.log(requestBody)
         } catch (err) {
