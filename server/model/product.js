@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose'
+import mongoose, { Schema } from 'mongoose'
 const productSchema = new Schema({
     product_image: { type: String },
     product_name: { type: String },
@@ -14,3 +14,8 @@ const productSchema = new Schema({
     discount: { type: Number }
 
 })
+
+const Product = new mongoose.model("Product", productSchema)
+
+
+export {Product}
