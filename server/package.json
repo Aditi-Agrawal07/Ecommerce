@@ -1,73 +1,17 @@
-<<<<<<< HEAD
 {
-  
   "name": "ecommerce",
-  
   "version": "1.0.0",
-  
   "description": "",
-  
   "main": "index.js",
-  
   "type": "module",
-  
   "scripts": {
-  
-    
-  "dev": "nodemon index.js"
-  
+    "dev": "nodemon index.js"
   },
-  
   "dependencies": {
-  
-    
-  "dotenv": "^16.4.5",
-  
-    
-  "express": "^4.19.2",
-  
-    
-  "mongoose": "^8.5.1"
-  
+    "cloudinary": "^2.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "multer": "^1.4.5-lts.1"
   }
 }
-=======
-{
-  
-  "name": "ecommerce",
-  
-  "version": "1.0.0",
-  
-  "description": "",
-  
-  "main": "index.js",
-  
-  "type": "module",
-  
-  "scripts": {
-  
-    
-  "dev": "nodemon index.js"
-  
-  },
-  
-  "dependencies": {
-  
-    
-  "cloudinary": "^2.3.0",
-  
-    
-  "dotenv": "^16.4.5",
-  
-    
-  "express": "^4.19.2",
-  
-    
-  "mongoose": "^8.5.1",
-  
-    
-  "multer": "^1.4.5-lts.1"
-  
-  }
-}
->>>>>>> 91fc26841342e160825dbaa0cef784a934c12a07
