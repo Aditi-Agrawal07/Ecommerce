@@ -14,9 +14,7 @@ export class AllproductComponent {
  products!: []
   ngOnInit() {
     const data = this.productService.getAllProducts().subscribe((response)=>{
-      this.products = response
-      
-
+      this.products = response 
     });
    
 
