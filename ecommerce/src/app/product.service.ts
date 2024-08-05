@@ -10,7 +10,7 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   getAllProducts(): Observable<any>{
-    return this.http.get("http://192.168.10.299/product/getProducts")
+    return this.http.get("http://192.168.10.229:8000/product/getProducts")
   
   }
  
