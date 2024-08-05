@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row">
-        @for (card of casual; track $index) {
+        @for (card of products; track $index) {
             <div class=" col-lg-4 col-md-4 col-sm-12 ">
                 <div class="card "   routerLink="/productDetails" (mouseenter)="hoverIndex = $index" (mouseleave)="hoverIndex = null">
-                    <img class="card-img-top" [src]="card.img" alt="Card image cap">
+                    <img class="card-img-top" [src]="card.product_image" alt="Card image cap">
                     <div class="card-body">
-                        <div>{{card.title}}</div>
+                        <div>{{card.product_name}}</div>
                         <div>
                             <ng-container>
                                 @for (n of [1,2,3,4,5]; track $index) {
-                                <img [src]="card.rating" alt="Rating">
+                                <img src="assets/Images/star10.png" alt="Rating">
                                 }
                             </ng-container>
                             <span>{{ card.point }}</span>

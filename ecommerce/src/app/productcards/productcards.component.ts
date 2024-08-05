@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from './Interface/product';
 
 @Component({
   selector: 'app-productcards',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
 })
 export class ProductcardsComponent {
   hoverIndex: number | null = null;
+  @Input()
+  products!:Product[]
   casual=[
     {id:'1' , img:"assets/Images/card9.png", title:'T-shrit with Tape Details', rating:"assets/Images/star10.png" , point:'4.5/5', price:'$120',isWishlisted: false  },
    {id:'2' , img:"assets/Images/card10.png", title:'skinny Fit Jeans',rating:"assets/Images/star10.png" , point:'3.5/5', price:'$240' , totalprice:'$260' , discount:'-20%',isWishlisted: false  },

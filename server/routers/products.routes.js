@@ -5,5 +5,5 @@ const router = express.Router()
 
 router.post("/addProducts", productController.addProducts)
 router.get("/getProducts" ,  productController.getProducts)
-// router.get("/getPoduct/:id" , productController.getProductID)
+ router.get("/getProduct/:id" , productController.getProductById)
 export {router as productRoute}
