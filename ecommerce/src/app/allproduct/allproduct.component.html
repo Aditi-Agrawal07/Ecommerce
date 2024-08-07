@@ -1,6 +1,101 @@
 <div class="containter ">
     <div class="row">
-        <div class="col-lg-3 col-md-3  ps-5">Filters</div>
+        <div class="col-lg-3 col-md-3 ps-5" style="overflow-y: scroll;">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-5 mt-3">
+                    <h5>Filters</h5>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 ArrowButton">
+                    <a href="javascript:void(0)" (click)="toggleFilters()">
+                        <img src="/assets/icons/filters.png" alt="filter-img" class="mt-3">
+                    </a>
+                </div>
+                <hr>
+                @if(showFilters || !isMobileScreen){
+                    <div >
+                        <div class="row d-flex">
+                            <div class="col-lg-10 col-md-10 col-sm-6">
+                                <div class="mt-0">T-Shirt</div>
+                                <div class="mt-3">Shorts</div>
+                                <div class="mt-3">Shirt</div>
+                                <div class="mt-3">Hoodies</div>
+                                <div class="mt-3">Jeans</div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ArrowButton">
+                                <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-0"></a>
+                                <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                                <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                                <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                                <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h5>Price</h5>
+                            <label for="customRange1" class="form-label">Example range</label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                        <hr>
+                        <div class="col-lg-12 col-sm-12 col-md-12 colorButton">
+                            <h5>Color</h5>
+                            <div>
+                                <button class="btn btn-success"></button>
+                                <button class="btn btn-danger"></button>
+                                <button class="btn btn-warning"></button>
+                                <button class="btn" style="background-color: orangered;"></button>
+                                <button class="btn" style="background-color: aqua;"></button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary"></button>
+                                <button class="btn" style="background-color: blueviolet;"></button>
+                                <button class="btn" style="background-color: rgb(214, 12, 153);"></button>
+                                <button class="btn btn-light"></button>
+                                <button class="btn btn-dark"></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-sm-12 col-lg-12 col-md-12 SizeButton">
+                            <h5>Size</h5>
+                            <button>XX-Small</button>
+                            <button>X-Small</button><br>
+                            <button>Small</button>
+                            <button>Medium</button><br>
+                            <button>Large</button>
+                            <button>X-Large</button><br>
+                            <button>XX-Large</button>
+                            <button>3X-Large</button><br>
+                            <button>4X-Large</button>
+                        </div>
+                        <hr>
+                        <div class="col-sm-12 col-lg-12 col-md-12">
+                            <h5>Dress Style</h5>
+                        </div>
+                       <div class="row d-flex">
+                        <div class="col-lg-10 col-md-10 col-sm-6">
+                            <div class="mt-0">Casual</div>
+                            <div class="mt-3">Formal</div>
+                            <div class="mt-3">Party</div>
+                            <div class="mt-3">Gym</div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 ArrowButton mb-4">
+                            <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-0"></a>
+                            <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                            <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                            <a href=""><img src="/assets/icons/rightArrow.png" alt="right arrow" class="mt-3"></a>
+                        </div>
+                       </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark text-light ApplyButton">Apply Filter</button>
+                        </div>
+                    </div>
+                }
+               
+            </div>
+        </div>
+        
+        
+        
+        
         <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-12  cloth-type"><h1>Casual</h1></div>

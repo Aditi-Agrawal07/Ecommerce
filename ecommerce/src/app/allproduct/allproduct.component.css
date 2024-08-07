@@ -13,7 +13,7 @@
     font-size: 23px;
 }
 .range-picker {
-    display: flex;
+    display: flex ;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -111,3 +111,45 @@ padding-left: 8%;
     justify-content: center;
     flex-grow: 1;
 }
+
+mat-slider {
+    width: 300px;
+  }
+
+  .colorButton button{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+  }
+  .SizeButton button{
+    width: 7rem;
+    height: 2.3rem;
+    background-color: rgb(243, 241, 241);
+    color:darkgray;
+    border: none;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .SizeButton button:hover{
+    background-color: black;
+    color: white;
+  }
+  .ArrowButton a{
+    border: none;
+    background-color: transparent;
+  }
+  .ApplyButton{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+  }
+@media (max-width: 768px) {
+    .ArrowButton {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
